@@ -27,20 +27,26 @@ html {
  * Customize the background color to match your design.
  */
 
+.wrapper {
+    display: grid;
+    grid-template-columns: 2;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: white;
-  alig: center;
 }
 
 li {
-  float: left;
   padding: 14px 16px;
   display: block;
   border-radius: 25px;
+  border-bottom: 1px solid purple;
 }
 
 li:hover {
@@ -54,16 +60,36 @@ li:active{
 h1 {
   text-align: center;
   padding: 10px;
+  grid-row: 1;
 }
 
-input {
+footer {
+  grid-row: 4;
+}
 
-  border: 3px solid #e2c974;
-  display: block;
+#searchBar {
+
+  border: 3px solid #cdcdd0;
   padding: 10px;
   border-radius: 25px;
 }
 
+#title {
+  background-image: url("Youth_banner-800x200.jpg");
+}
+
+#novedades {
+  background-image: url("prom-dresses-800x200.jpg");
+}
+.one {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.two {
+    grid-column: 2;
+    grid-row: 3;
+}
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
